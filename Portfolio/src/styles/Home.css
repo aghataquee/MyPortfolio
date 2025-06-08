@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  /* ===== Hero Section ===== */
+  .Hero-section {
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+  }
+  
+  .Hero-left-container {
+    max-width: 600px;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .Hero-left-container h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .Hero-left-container h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  .Hero-right-container img {
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* ===== Button Styles ===== */
+  button, a button {
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #6e8efb;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #f0f0f0;
+  }
+  
+  /* ===== About Me Section ===== */
+  .body {
+    padding: 5% 10%;
+  }
+  
+  .body h2 {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .body h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(to right, #6e8efb, #a777e3);
+    border-radius: 2px;
+  }
+  
+  .body p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-bottom: 3rem;
+    color: #555;
+  }
+  
+  /* ===== Skills Section ===== */
+  .skills-section {
+    margin: 4rem 0;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .skill-category {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .skill-category h3 {
+    color: #6e8efb;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .skill-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(to right, #6e8efb, #a777e3);
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.8rem;
+  }
+  
+  .skill-item {
+    background: #f5f7ff;
+    color: #555;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    background: #6e8efb;
+    color: white;
+    transform: translateY(-3px);
+  }
+  
+  /* ===== Projects Section ===== */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    color: #444;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  .card h4 {
+    font-size: 0.9rem;
+    color: #6e8efb;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Project Links Container */
+  .project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  /* GitHub Repo Button */
+  .card a[href*="github"] button {
+    background: linear-gradient(to right, #6e8efb, #a777e3);
+    color: white;
+  }
+  
+  .card a[href*="github"] button:hover {
+    background: linear-gradient(to right, #5d7de8, #9666d8);
+  }
+  
+  /* WordPress Project Buttons */
+  .card a[href*="wordpress"] button,
+  .card a[href*="wp-admin"] button {
+    background: linear-gradient(to right, #21759b, #00a0d2);
+    color: white;
+  }
+  
+  .card a[href*="wordpress"] button:hover,
+  .card a[href*="wp-admin"] button:hover {
+    background: linear-gradient(to right, #1a6485, #0087be);
+  }
+  
+  /* Live Demo Buttons */
+  .card a[href*="://"] button:not([href*="github"]):not([href*="wordpress"]) {
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
+    color: white;
+  }
+  
+  .card a[href*="://"] button:not([href*="github"]):not([href*="wordpress"]):hover {
+    background: linear-gradient(to right, #3e8e41, #1B5E20);
+  }
+  
+  /* ===== Animations ===== */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* ===== Responsive Design ===== */
+  @media (max-width: 992px) {
+    .Hero-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 5% 10%;
+    }
+    
+    .Hero-left-container {
+      margin-bottom: 3rem;
+    }
+    
+    .Hero-left-container h1 {
+      font-size: 2.2rem;
+    }
+    
+    .Hero-right-container img {
+      max-width: 350px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .Hero-left-container h1 {
+      font-size: 1.8rem;
+    }
+    
+    .Hero-left-container h3 {
+      font-size: 1.2rem;
+    }
+    
+    .body {
+      padding: 10% 5%;
+    }
+    
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    
+    .project-links {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
