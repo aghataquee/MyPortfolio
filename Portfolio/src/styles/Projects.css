@@ -1,37 +1,55 @@
-.projects-section {
-  padding: 4rem 0;
-  background: #f9f9f9;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.project-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.technologies {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-.technologies span {
-  background: #e0e0e0;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    color: #444;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  .card h4 {
+    font-size: 0.9rem;
+    color: #6e8efb;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Project Links Container */
+  .project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  /* GitHub Repo Button */
+  .card a[href*="github"] button {
+    background: linear-gradient(to right, #6e8efb, #a777e3);
+    color: white;
+  }
+  
+  .card a[href*="github"] button:hover {
+    background: linear-gradient(to right, #5d7de8, #9666d8);
+  }
